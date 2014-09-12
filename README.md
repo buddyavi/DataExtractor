@@ -27,10 +27,10 @@ Sample Output:-
    <columns>
     <column name="STUDENT_NAME" value="John" timestamp="1410511550 " />
     <column name="STUDENT_ADDRESS" value="los angeles" timestamp="1410511550" />
-    <column name="STUDENT_COURSES" value="algorithms" timestamp=""14105115770" />
-    <column name="STUDENT_FEES_DUE" value="$1660" timestamp="1410511580" />
+    <column name="STUDENT_COURSES" value="algorithms" timestamp="14105115770" />
+    <column name="STUDENT_FEES_DUE" value="1660" timestamp="1410511580" />
    </columns>
-  <row>
+  </row>
 </response>
 
 Hbase returns values in bytes so the  project uses the concept of in memory cache to maintain a column to data type

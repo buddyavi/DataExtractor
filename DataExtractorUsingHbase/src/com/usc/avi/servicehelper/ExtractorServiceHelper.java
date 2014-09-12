@@ -37,7 +37,7 @@ import com.usc.avi.model.VariableModel;
 import com.usc.avi.util.ApachePropertyWrapper;
 
 /**
- * Class holding the business logic for the service request and the helper
+ * Class  holding the business logic for the service request and the helper
  * methods to serve the request
  * 
  */

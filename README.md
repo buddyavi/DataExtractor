@@ -8,30 +8,30 @@ for example but is flexible enough to fit  in any system.
 One can request student data by sending a request xml in POST method body with the variables required for a particular
 student. Sample Input Xml :-
 
-<request student_id="1234">
-  <variables>
-    <variable>STUDENT_NAME</variable>
-    <variable>STUDENT_ADDRESS</variable>
-    <variable>STUDENT_COURSES</variable>
-    <variable>STUDENT_FEES_DUE</variable>
-  </variables>
-</request>
+&lt;request student_id=&apos;1234&apos; &gt;
+  &lt;variables&gt;
+    &lt;variable&gt;STUDENT_NAME&lt;/variable&gt;
+    &lt;variable&gt;STUDENT_ADDRESS&lt;/variable&gt;
+    &lt;variable&gt;STUDENT_COURSES&lt;/variable&gt;
+    &lt;variable&gt;STUDENT_FEES_DUE&lt;/variable&gt;
+  &lt;/variables&gt;
+&lt;/request&gt;
 
 Student Id is the row key for Hbase datastore. 
 
 Sample Output:-
 
-<response>
-<metaData>SUCCESS</metaData>
-  <row student_id="1234">
-   <columns>
-    <column name="STUDENT_NAME" value="John" timestamp="1410511550 " />
-    <column name="STUDENT_ADDRESS" value="los angeles" timestamp="1410511550" />
-    <column name="STUDENT_COURSES" value="algorithms" timestamp="14105115770" />
-    <column name="STUDENT_FEES_DUE" value="1660" timestamp="1410511580" />
-   </columns>
-  </row>
-</response>
+&lt;response&gt;
+&lt;metaData&gt;SUCCESS&lt;/metaData&gt;
+  &lt;row student_id=&quot;1234&quot;&gt;
+   &lt;columns&gt;
+    &lt;column name=&quot;STUDENT_NAME&quot; value=&quot;John&quot; timestamp=&quot;1410511550 &quot; /&gt;
+    &lt;column name=&quot;STUDENT_ADDRESS&quot; value=&quot;los angeles&quot; timestamp=&quot;1410511550&quot; /&gt;
+    &lt;column name=&quot;STUDENT_COURSES&quot; value=&quot;algorithms&quot; timestamp=&quot;14105115770&quot; /&gt;
+    &lt;column name=&quot;STUDENT_FEES_DUE&quot; value=&quot;1660&quot; timestamp=&quot;1410511580&quot; /&gt;
+   &lt;/columns&gt;
+  &lt;/row&gt;
+&lt;/response&gt;
 
 Hbase returns values in bytes so the  project uses the concept of in memory cache to maintain a column to data type
 mapping and on the fly converts a byte value to corresponding data type and returns it.

@@ -8,14 +8,14 @@ for example but is flexible enough to fit  in any system.
 One can request student data by sending a request xml in POST method body with the variables required for a particular
 student. Sample Input Xml :-
 
-&lt;request student_id=&apos;1234&apos; &gt;&#xD
-  &lt;variables&gt;&#xD
-    &lt;variable&gt;STUDENT_NAME&lt;/variable&gt;&#xD
-    &lt;variable&gt;STUDENT_ADDRESS&lt;/variable&gt;&#xD
-    &lt;variable&gt;STUDENT_COURSES&lt;/variable&gt;&#xD
-    &lt;variable&gt;STUDENT_FEES_DUE&lt;/variable&gt;&#xD
-  &lt;/variables&gt;&#xD
-&lt;/request&gt;&#xD
+&lt;request student_id=&apos;1234&apos; &gt;\n
+  &lt;variables&gt;\n
+    &lt;variable&gt;STUDENT_NAME&lt;/variable&gt;\n
+    &lt;variable&gt;STUDENT_ADDRESS&lt;/variable&gt;
+    &lt;variable&gt;STUDENT_COURSES&lt;/variable&gt;
+    &lt;variable&gt;STUDENT_FEES_DUE&lt;/variable&gt;
+  &lt;/variables&gt;
+&lt;/request&gt;
 
 Student Id is the row key for Hbase datastore. 
 

@@ -9,7 +9,7 @@ One can request student data by sending a request xml in POST method body with t
 student. Sample Input Xml :-
 
 &lt;request student_id=&apos;1234&apos; &gt;
-  &lt;variables&gt;
+  &lt;variables&gt;</br>
     &lt;variable&gt;STUDENT_NAME&lt;/variable&gt;</br>
     &lt;variable&gt;STUDENT_ADDRESS&lt;/variable&gt;
     &lt;variable&gt;STUDENT_COURSES&lt;/variable&gt;

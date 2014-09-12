@@ -37,7 +37,7 @@ import com.usc.avi.model.VariableModel;
 import com.usc.avi.util.ApachePropertyWrapper;
 
 /**
- * Class  holding the business logic for the service request and the helper
+ * Class holding the business logic for the service request and the helper
  * methods to serve the request
  * 
  */
@@ -46,10 +46,7 @@ public class ExtractorServiceHelper {
 			.getLogger(ExtractorServiceHelper.class);
 
 	private ExtractorDAO TableDao;
-	// static String propFile = Constants.PROPERTY_FILE;
-	// private static Properties prop;
-	// variable to check if CM13 is requested in request xml
-	
+
 	/*
 	 * static { prop = LendawarePropertiesLoader.loadJobProps(propFile); }
 	 */
@@ -204,7 +201,7 @@ public class ExtractorServiceHelper {
 		long lEnd = System.currentTimeMillis();
 		lTimeDiff = lEnd - lStart;
 		log.info("TT taken: " + lTimeDiff + " (Milli Seconds)");
-        model.setMetadata(errCode.getRetMessage());
+		model.setMetadata(errCode.getRetMessage());
 		// returning failure response for no records found return
 		return model;
 
@@ -259,7 +256,7 @@ public class ExtractorServiceHelper {
 			log.info("Variable : " + variable + ", dataType : " + dataType);
 
 			// generic value validation
-			
+
 			byte[] bValue = keyValue.getValue();
 			if (bValue.length > 0) {
 				if (dataType != null) {

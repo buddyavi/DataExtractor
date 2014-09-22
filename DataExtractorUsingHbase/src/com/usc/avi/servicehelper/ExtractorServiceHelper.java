@@ -47,9 +47,7 @@ public class ExtractorServiceHelper {
 
 	private ExtractorDAO TableDao;
 
-	/*
-	 * static { prop = LendawarePropertiesLoader.loadJobProps(propFile); }
-	 */
+	
 
 	/**
 	 * Constructor for initializing the DAO object

@@ -33,11 +33,7 @@ public class MemcachedManager {
 	private static Logger logger = LoggerFactory
 			.getLogger(MemcachedManager.class);
 
-	//private static Properties prop;
-	//static String propFile = Constants.PROPERTY_FILE;
-	/*static {
-		prop = LendawarePropertiesLoader.loadJobProps(propFile);
-	}*/
+	
 
 	/**
 	 * Method to get variable to data type mapping from the MySql Db

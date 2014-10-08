@@ -20,11 +20,7 @@ public class MySqlConnection {
 	private static Logger logger = LoggerFactory
 			.getLogger(MySqlConnection.class);
 
-	/*private static Properties prop;
-	static String propFile = Constants.PROPERTY_FILE;
-	static {
-		prop = LendawarePropertiesLoader.loadJobProps(propFile);
-	}*/
+	
 
 	static String url = "jdbc:mysql://"
 			+ ApachePropertyWrapper.getProperty(Constants.MYSQL_SERVER_NAME) + "/"

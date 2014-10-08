@@ -42,7 +42,7 @@ public class ExtractorDAOImpl implements ExtractorDAO {
 	 */
 	static {
 		// loading properties file
-		//prop = LendawarePropertiesLoader.loadJobProps(propFile);
+		
 		conf = HBaseConfiguration.create();
 
 		// setting configuration properties
